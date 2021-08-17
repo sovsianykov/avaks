@@ -1,38 +1,49 @@
 .navbar {
   width: 100%;
-  height: 60px;
-  padding: 5px;
+  height: 40px;
   background: #000000;
   .menuIcon {
     color: cornsilk;
     width: 30px;
-    margin: 15px;
+    margin: 25px;
   }
    .droopDown {
      width: 100%;
+     margin-right: auto ;
      margin-top: 20px;
      height: 0;
-     padding: 3px;
      opacity: 0;
      flex-direction: column;
      align-items: center;
      justify-content: flex-start;
      transition: .4s ease-in-out;
      .navigationItem {
-       width: 100%;
+       margin-right: auto;
+       width: 50%;
        height: 60px;
-       background: #414040;
+       background: rgba(65, 64, 64, 0.18);
        color: wheat;
        font-size: 30px;
-       padding: 10px;
+       //padding: 10px;
        letter-spacing: 0.2rem;
-       line-height: 40px;
        transition: .4s ease-in-out;
+       .title {
+         margin: 10px;
+         line-height: 30px;
+         transition: .4s ease-in-out;
+         font-weight: 300;
+         text-shadow: 0 0 2px #000;
+
+       }
 
        &_active, :hover {
-         background: #8a0606;
+         width: 100%;
+         background: rgba(17, 16, 16, 0.2);
          color: aliceblue;
-         padding-left: 100px ;
+         .title {
+           background: transparent;
+           margin-left: 30px;
+         }
        }
 
      }

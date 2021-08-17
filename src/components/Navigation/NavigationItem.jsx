@@ -20,7 +20,7 @@ const NavigationItem = ({
     },[item.id, onClick])
     return (
         <nav className={classNames} onClick={onClickHandler}>
-            {item.title}
+            <div className={styles.title}>{item.title}</div>
         </nav>
     );
 };
